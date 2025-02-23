@@ -8,7 +8,9 @@ const App = () => {
   const [todos, setTodos] = useState([]);
   const [todo, setTodo] = useState("");
   // const [error, setError] = useState("");
-  const url = 'http://localhost:5000/todos';
+  // const url = 'http://localhost:5000/todos';
+
+  const url = 'https://react-todo-backend-para.onrender.com/todos';
 
   useEffect(() => {
     axios.get(url).then((res) => {
