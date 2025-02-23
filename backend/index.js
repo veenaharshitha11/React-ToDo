@@ -2,12 +2,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 require("dotenv").config();
-
+console.log('MongoDB URI:', process.env.MONGO_URI);
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-const mongoURI = process.env.MONGO_URI || "mongodb://localhost:27017/tododb";
+const mongoURI = process.env.MONGO_URI;
+const port = process.env.PORT;
 
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
