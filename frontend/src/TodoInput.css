@@ -1,0 +1,26 @@
+
+.input-wrapper {
+    margin: 3.5rem;
+}
+
+
+.todo-input {
+    width: 100%;  /* Makes input take full width of the container */
+    max-width: 500px; /* Limit max size */
+    padding: 10px; /* Increase padding for bigger appearance */
+    font-size: 18px; /* Make text inside bigger */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #325e8d; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Add space between input and button */
+    transition: background-color 0.3s ease;
+}
