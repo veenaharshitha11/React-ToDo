@@ -20,6 +20,13 @@ const TodoSchema = new mongoose.Schema({ text: String, completed: Boolean });
 const Todo = mongoose.model("Todo", TodoSchema);
 
 // API Routes
+
+app.get("/", (req, res) => {
+  return res.json({
+    message: "Welcome to Node.js REST API using ExpressJs and MongoDB"
+  });
+});
+
 app.get("/todos", async (req, res) => {
     const todos = await Todo.find();
     res.json(todos);
